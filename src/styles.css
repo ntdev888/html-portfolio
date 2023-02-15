@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+.nav-fixed {
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    top: 0pt;
+    left: 0pt;
+} 
+
+.all{
+    height: 100%;
+    background-color: black;
+}
+
+.spacer {
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer-top {
+    background-image: url('layered-waves.svg');
+}
+
+.layer-second {
+    background-image: url('layered-waves-top.svg');
+}
+
+
+.layer-top-trans {
+    background-image: url('layered-waves-top-trans.svg');
+    background-position:top;
+}
+
+.layer-bottom-trans {
+    background-image: url('layered-waves-trans.svg');
+    background-position: bottom;
+}
+
+
+.parallax {
+    background-image: url("low-poly-grid.svg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.footer {
+    color: white;
+    height:24px; 
+    width: 100%; 
+    background-color: #00101C;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
+
+}   
+
+.footer_contents {
+    height:24px; 
+    width: 1000px; 
+    margin:auto;
+}
+
+.custom-shape-divider-top-1676435250 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}

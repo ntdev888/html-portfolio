@@ -1,0 +1,164 @@
+<!doctype html>
+<!-- Welcome to Nic Tauroa's Portfolio-->
+<!-- If you have ventured this far, this is the behind the scenes of my portfolio-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags, tanke from Bootstrap Template -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Nics Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="./src/styles.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles-menu.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Nic's Portfolio</title>
+  </head>
+  <body>
+
+
+<!--Navagation Bar-->  
+<section style="position:fixed; top: 0pt; right:0pt ;">
+        <!-- Copy/Paste template Bootstrap menu, modified for more flavour-->
+        <nav class="navbar navbar-expand-lg all flex-auto">
+          <li class="nav-item dropdown mx-auto">
+            <!-- I thought this menu icon looked cool from Bootstrap-->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <object data="./src/menu-icon.svg" type="image/svg+xml"></object>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#isomenu">IsoMenu </a>
+              <a class="dropdown-item" href="#parallax">Parallax Image</a>
+              <a class="dropdown-item" href="#threejs">Three js</a>
+              <a class="dropdown-item" href="#dapp">React dApp</a>
+              <a class="dropdown-item" href="#">Other Projects</a>
+              <a class="dropdown-item" href="#">Contact</a>
+            </div>
+          </li>
+          <a class="navbar-brand" href="#">NicTauroa</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#start">About Me </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact </a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+</section>
+
+<!--Small hero section-->
+<section id="start" class="d-flex" style="background: #001220; padding: 60px; width:100%;">
+  <div class="mx-auto">
+  <div style="box-shadow: 10px 10px 10px black; height:100%; width:400px; border-radius: 10px; background-color: #3e3f46; color: #f2f2f2; padding: 30px; text-align: center;"> 
+    <h1>Nic Tauroa <br>Web Portfolio</h1>
+    <p>I am a Mechanical Engineer by trade who has been upskilling into Full Stack development</p>
+    <p>This is a webpage to showcase my portfolio. It is a collection of cool little projects I have produced and implamented. Some examples belong to larger scale projects still being worked on</p>
+    <p>The 3d models created for this portfolio and all other work was created by me using CAD and modelling software such as blender and Spline</p>
+      <ul>Tools Used</ul>
+      <ul>HTML, CSS, BootStrap, three.js, React.js</ul>
+  </div>
+  </div>
+</section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--ISO CSS Menu-->
+<section id="isomenu" class="spacer layer-top d-flex flex-row justify-content-center">
+  <!---I was having issues with CSS styles clashing with bootstrap, for this reason I choose to use inline Styles-->
+  <div style="padding-top:40px;"><div style="box-shadow: 10px 10px 10px black;height:300px; width:300px; border-radius: 10px; background-color: #3e3f46; color: #f2f2f2; padding: 30px; text-align: centre;"> 
+    <h1>Isometric CSS menu</h1><p>This is a pure CSS menu. It uses its own style sheet made following a tutorial. It utilizes Variables for its Z-index and background colours</p> </div>
+  </div>
+  <div style="padding:80px;">
+    <!--I still have a bug with this menu taking priority over bootstrap CSS, if I make the top navbar width:100% the menu below overlays it-->
+    <div>
+		<ul class="ul1">
+		<li style="--i:6;--clr:#1877f2;"><a href="#start"><span></span>About Me</a></li>
+		<li style="--i:5;--clr:#25d366;"><a href="#parallax"><span></span>Parallax Image</a></li>
+		<li style="--i:4;--clr:#1da1f2;"><a href="#threejs"><span></span>Three.js</a></li>
+		<li style="--i:3;--clr:#c32aa3;"><a href="#dapp"><span></span>dApp</a></li>
+		<li style="--i:2;--clr:#ff0000;"><a href="#other"><span></span>Other Works</a></li>
+		<li style="--i:1;--clr:#0a66c2;"><a href="#contact"><span></span>Contact</a></li>
+
+		</ul>
+  </div>
+  </div>
+</section>
+
+<!--Parrallax Image-->
+<section id="parallax" class="parallax" style="height: 100%;">
+  <div class="layer-top-trans spacer d-flex" style="height:500px; width:100%;">
+    <div class="mx-auto" style="padding-top:200px">
+    <div style="box-shadow: 10px 10px 10px black; height:300px; width:300px; border-radius: 10px; background-color: #3e3f46; color: #f2f2f2; padding: 30px; text-align: center;"> 
+      <h1>Parallax Scrolling</h1><p>Who doesn't like a Parallax scrolling image? Background is an SVG suspended in a Section container. 2x div containers with transparent backgrounds top and bottom</p> 
+    </div>
+    </div>
+</div>
+  </div>
+  <div class="layer-bottom-trans spacer" style="height:500px;"></div>
+</section>
+
+<!--Three.js Section-->
+<section id="threejs" style="background-color: #001220; width:100%;">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path fill="#C62368" d="M1200 120L0 16.48 0 0 1200 0 1200 120z"></path>
+</svg>
+<div class="d-flex hstack flex-row justify-content-center">
+  <div>
+    <canvas id="canvas3d" style="height:800px"></canvas>
+    <script type="module">
+      import { Application } from './src/runtime.js';
+      const canvas = document.getElementById('canvas3d');
+      const app = new Application(canvas);
+      app.load('./src/scene.splinecode');
+    </script>
+ </div>
+
+ <div class="p-2 align-items-center" style="box-shadow: 10px 10px 10px black; height:600px; width:300px; border-radius: 10px; background-color: #3e3f46; color: #f2f2f2; padding: 30px; text-align: center;"> 
+  <h1>Three.js</h1><p>This is a 3d model of a modular hydroponic unit I designed in fusion 360</p>
+  <p>This project will be opensoured in the near future</p>
+  <p>The 3d model was exported from fusion 360 as a triangulated mesh, then bought into Spline Design and animated.</p>
+  <p>Holding the left mouse button and dragging will rotate the mode</p>
+  <p>Mouse over the top will give an exploded view</p> 
+ </div>
+ 
+</div>
+</section>
+
+<!--REACT.js dApp, completed but working on integrating React into standard HTML-->
+<!--This is so I dont need the entire page to be a React App-->
+<section id="dapp" style="background: #001220; padding: 60px; width:100%;">
+<div class="d-flex flex-row justify-content-center p-5">
+<div class="p-2 align-items-center" style="box-shadow: 10px 10px 10px black; height:100%; width:300px; border-radius: 10px; background-color: #3e3f46; color: #f2f2f2; padding: 30px; text-align: center;"> 
+  <h1>React.js dApp</h1><p>This is a place holder for a simple web3 dApp</p>
+  <p>It works using React.js to talk to a smart contract deployed on a small scale test network</p>
+  <p>This will use Metamask and the test need will need to be added to function</p>
+  <p>It executes a 'wave' application that 'waves' back</p>
+  <p>It also counts and stores waves as people execute the dApp</p>
+  <p>I also have a NFT project I am working on when completed will replace this section</p> 
+</div>
+</div>
+</section>
+
+<!--Footer-->
+<div class="footer">
+  <div class="footer-contents">Nic.Tauroa 
+    <!--PNGs were loading faster than SVG so I switched-->
+    <img style="padding:2px;" src="src/iconmonstr-linkedin-3-24.png" height="20" width="20">
+    <img style="padding:2px;" src="src/iconmonstr-paper-plane-2-24.png" height="20" width="20">
+    <img style="padding:2px;" src="src/iconmonstr-github-3-24.png" height="20" width="20">  
+  </div>
+</div>
+</body>
+</html>
