@@ -7,7 +7,7 @@
     <style>
       body {
         margin: 0;
-				overflow: hidden;
+	overflow: hidden;
       }
   
       .card {
@@ -26,6 +26,30 @@
     </style>
   </head>
   <body>
+	  <!--Hiccup with Gip merger :o-->
+	  <div>
+      <div class="anim">
+    <canvas id="canvas3d"></canvas>
+    <a class="logo" href="https://spline.design"></a>
+    <script type="module">
+      import { Application } from './src/v4_2/runtime.js';
+      const canvas = document.getElementById('canvas3d');
+      const app = new Application(canvas);
+      app.load('./src/v4_2/scene.splinecode');
+    </script>
+    </div>
+
+    <div class="card">
+      <div style="box-shadow: 10px 10px 10px black; height:600px; width:300px; border-radius: 10px; background-color: #3e3f46; color: #f2f2f2; padding: 30px; text-align: center;"> 
+        <h1>Three.js</h1><p>This is a 3d model of a modular hydroponic unit I designed in fusion 360</p>
+        <p>This project will be opensoured in the near future</p>
+        <p>The 3d model was exported from fusion 360 as a triangulated mesh, then bought into Spline Design and animated.</p>
+        <p>Holding the left mouse button and dragging will rotate the mode</p>
+        <p>Mouse over the top will give an exploded view</p> 
+       </div>
+       </div>
+       
+    </div>
     
   </body>
 </html>
