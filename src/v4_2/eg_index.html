@@ -2,16 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
         margin: 0;
-	overflow: hidden;
+				overflow: hidden;
       }
   
       .card {
-        font-size: 1rem;
         position: absolute;
         right: 20px;
         top: 20px
@@ -23,34 +21,31 @@
         width: 100%;
         display: block;
       }
-    </style>
+      </style>
   </head>
   <body>
-	  <!--Hiccup with Gip merger :o-->
-	  <div>
+    <div>
       <div class="anim">
     <canvas id="canvas3d"></canvas>
     <a class="logo" href="https://spline.design"></a>
     <script type="module">
-      import { Application } from '.runtime.js';
+      import { Application } from './runtime.js';
       const canvas = document.getElementById('canvas3d');
       const app = new Application(canvas);
-      app.load('.scene.splinecode');
+      app.load('./scene.splinecode');
     </script>
     </div>
-
-   <div class="card">
-      <div style="box-shadow: 10px 10px 10px black; height:600px; width:300px; border-radius: 10px; background-color: #3e3f46; color: #f2f2f2; padding: 30px; text-align: center;"> 
-        <h1>Three.js</h1><p>This is a 3d model of a modular hydroponic unit I designed in fusion 360</p>
-        <p>This project will be opensoured in the near future</p>
-        <p>The 3d model was exported from fusion 360 as a triangulated mesh, then bought into Spline Design and animated.</p>
-        <p>Holding the left mouse button and dragging will rotate the mode</p>
-        <p>Mouse over the top will give an exploded view</p> 
-       </div>
-       </div>
-       
-    </div>
-    
+    <div class="card">
+        <div style="box-shadow: 10px 10px 10px black; height:600px; width:300px; border-radius: 10px; background-color: #3e3f46; color: #f2f2f2; padding: 30px; font-family: Arial, Helvetica, sans-serif; text-align: center;"> 
+          <h1>Three.js</h1><p>This is a 3d model of a modular hydroponic unit I designed in fusion 360</p>
+          <p>This project will be opensoured in the near future</p>
+          <p>The 3d model was exported from fusion 360 as a triangulated mesh, then bought into Spline Design and animated.</p>
+          <p>Holding the left mouse button and dragging will rotate the mode</p>
+          <p>Mouse over the top will give an exploded view</p> 
+         </div>
+         </div>
+    </div>    
   </body>
 </html>
+  
   
